@@ -10,7 +10,7 @@ class RegisterForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ['username', 'first_name', 'last_name', 'email']
+        fields = ['username', 'first_name', 'last_name', 'gender', 'email']
 
     def clean_confirm_password(self):       #clean메써드가 호출된후에 호출되는 메써드 clean_필드네임(유효성 검사) ex)clean_username 
         cd = self.cleaned_data

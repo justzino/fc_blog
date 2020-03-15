@@ -37,7 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+]
+
+INSTALLED_APPS += [
     'users',
+    'helpers',
+    'blogs',
 ]
 
 MIDDLEWARE = [
@@ -123,3 +128,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 AUTH_USER_MODEL = 'users.User'
+
+# 아래 로그인, 로그아웃 변수는 꼭 세팅해야함
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'

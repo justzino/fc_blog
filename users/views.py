@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-from .forms import RegisterForm, LoginForm
+from .forms import RegisterForm
 
 def register(request):
     if request.method == 'POST':
@@ -17,5 +17,5 @@ def register(request):
     return render(request, 'registration/register.html', {'user_form':user_form})
 
 
-def login(request):
-    return render(request, 'registration/login.html')
+# def login(request):
+#     return render(request, 'registration/login.html')
