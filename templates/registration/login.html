@@ -9,6 +9,7 @@
     <hr>
     <form method="post" action="{% url 'login' %}">
         {% csrf_token %}
+        <!--csrf : 사이트간 요청 위조 (웹사이트 취약점 공격중 하나)-->
         <input type="hidden" name="next" value="" />
         {{ form.as_p }}
         <button class="btn btn-primary" type="submit">로그인</button>
