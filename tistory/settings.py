@@ -25,7 +25,7 @@ SECRET_KEY = 'eg-fxyck@n(x8gmf23e9%=+vp^ns(7p$dmm!^9@nn2q2p&)8_w'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
