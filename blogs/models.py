@@ -8,3 +8,8 @@ class Post(BaseModel):
     title = models.CharField(max_length=255, blank=False)
     content = models.TextField()
     image=models.ImageField(blank=True, null=True)
+
+    def __str__(self):
+        return '%s - %s' % (self.id, self.title)    # post 제목 형식
+
+
